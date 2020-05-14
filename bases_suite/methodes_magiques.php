@@ -55,7 +55,7 @@ $tender = new Poulet();
 $tender2 = clone $tender;
 
 //COPIER COLLER
-$mcChicken = $tender2
+$mcChicken = $tender2;
 
 //Il faut différencier le __CLONE du COPIER/COLLER qui consiste à inserer dans une variable un objet nouvellement créé
 //COPIER COLLER-> si $obja = $objb, tout se qui changera dans l'objet a changera dans l'objet b et inversement; ils pointent vers la même référence.
