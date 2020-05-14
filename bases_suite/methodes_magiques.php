@@ -34,7 +34,7 @@ class Chicken {
 }
 
 $nugget = new Chicken ();
-unset($nugget) //Permet de détruire un objet (=> similaire à la session/cookie)
+unset($nugget); //Permet de détruire un objet ou plutôt de se séparer de la classe (=> similaire à la session/cookie)
 
 //CLONE: IMPORTANT
 class Poulet {
@@ -53,3 +53,10 @@ class Poulet {
 
 $tender = new Poulet();
 $tender2 = clone $tender;
+
+//COPIER COLLER
+$mcChicken = $tender2
+
+//Il faut différencier le __CLONE du COPIER/COLLER qui consiste à inserer dans une variable un objet nouvellement créé
+//COPIER COLLER-> si $obja = $objb, tout se qui changera dans l'objet a changera dans l'objet b et inversement; ils pointent vers la même référence.
+//Clone -> Modifier l'un ne modifiera pas l'autre, pas la même référence. Utile pour récupérer un objet et changer quelques attributs 
